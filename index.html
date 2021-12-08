@@ -7,25 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shooting Game</title>
     <style>
-        body{
-            margin: 50px;
+        body {
+            /* margin: 50px; */
         }
-        .container {
+
+        * {
+            padding: 5px;
+            margin: 3px;
+        }
+
+        .container1 {
             display: flex;
-            direction: row;
-            gap:300px
+            ;
+            justify-content: center;
+            align-items: center;
         }
-        .box1{
-            display: block;
-        }
-        .box2{
-            display: block;
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+
+    <div class="container1">
         <div class="box1">
             <div id="player1"></div>
             <div>Player1</div>
@@ -35,12 +45,16 @@
             <div>Player2</div>
         </div>
     </div>
-    <button id="shoot-btn">Shoot</button>
-    <button id="again-btn">Play Again</button>
-    <div>Player1- Won:  <span id="player1-won"></span></div>
-    <div>Player2- Won:  <span id="player2-won"></span></div>
-    <div id="series-won"></div>
-    <button id="restart-btn">Restart The Game</button>
+    <section class="container2">
+        <button id="shoot-btn">Shoot</button>
+        <button id="again-btn">Play Again</button>
+    </section>
+    <section class="container2">
+        <div>Player1- Won: <span id="player1-won"></span></div>
+        <div>Player2- Won: <span id="player2-won"></span></div>
+        <div id="series-won"></div>
+        <button id="restart-btn">Restart The Game</button>
+    </section>
     <script src="script.js"></script>
 </body>
 

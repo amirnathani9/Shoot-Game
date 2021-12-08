@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        .container {
+            display: flex;
+            direction: row;
+            gap:300px
+        }
+        .box1{
+            display: block;
+        }
+        .box2{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div id="player1"></div>
+            <div>Player1</div>
+        </div>
+        <div class="box2">
+            <div id="player2"></div>
+            <div>Player2</div>
+        </div>
+    </div>
+    <button id="shoot-btn">Shoot</button>
+    <button id="again-btn">Play Again</button>
+    <div>Player1- Won:  <span id="player1-won"></span></div>
+    <div>Player2- Won:  <span id="player2-won"></span></div>
+    <div id="series-won"></div>
+    <button id="restart-btn">Restart The Game</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

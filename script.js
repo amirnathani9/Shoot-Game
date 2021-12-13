@@ -77,6 +77,7 @@ shootBtn.addEventListener("click", () => {
         againBtn.disabled = "true"
         restartBtn.style.visibility = "visible"
     } else if (player2Score == 3) {
+
         seriesWon.style.display = "block"
         seriesWon.innerText = "Congratulations Player2 Won the Game"
         shootBtn.disabled = "true"
@@ -109,7 +110,7 @@ againBtn.addEventListener("click", () => {
 
 
 restartBtn.addEventListener("click", () => {
-    seriesWon.style.visibility = "hidden"
+    seriesWon.style.display = "none"
     shootBtn.disabled = false;
     againBtn.disabled = true;
     shootBtn.innerHTML = "Shoot"
